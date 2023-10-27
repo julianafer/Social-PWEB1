@@ -1,15 +1,3 @@
-<p>{{titulo}}</p>
+<app-menu></app-menu>
 
-<p>Aluno: {{aluno}}</p>
-
-<br>
-
-Nome: <input [(ngModel)]="usuario.nome"><br>
-CPF: <input [(ngModel)]="usuario.cpf"><br>
-Idade: <input [(ngModel)]="usuario.idade"><br>
-
-<button (click)="inserirUsuario()">Enviar</button>
-
-<ul>
-  <li *ngFor="let usuario of usuarios">{{usuario.nome}}</li>
-</ul>
+<router-outlet></router-outlet>
